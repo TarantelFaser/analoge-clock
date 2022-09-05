@@ -1,0 +1,24 @@
+
+.div-centered-horizontal {
+    margin: 0 auto;
+}
+
+#canvas {
+    width: inherit;
+    height: inherit;
+}
+
+.margin-percentile-90 {
+    height: 90vw;
+    width: 90vw;
+}
+
+.input-div {
+    width : content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color : dimgray;
+    background-color: lightgrey;
+    padding : 10px;
+
+}

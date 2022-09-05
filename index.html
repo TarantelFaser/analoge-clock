@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithms Visulization</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<script type="text/javascript" src="main.js"></script>
+<body style="background-color:#909090" onload="loadClock()">
+
+    <div class="margin-percentile-90 div-centered-horizontal" id="canvas-div">
+        <canvas style="background-color: white;" id="canvas">Canvas not supported!</canvas>
+        <div class="input-div">
+            <input id="checkMinDesign" type="checkbox" onclick="toggleMinimalistic()" />
+            <label for="checkMinDesign">minimalistic design</label>
+            <input id="checkNum" type="checkbox" onclick="changeNumbers()" />
+            <label for="checkNum">number</label>
+            <input id="checkDateTime" type="checkbox" onclick="changeDateTime()"  checked/>
+            <label for="checkDateTime">date / time</label>
+        </div>
+    </div>
+
+</body>
+</html>
