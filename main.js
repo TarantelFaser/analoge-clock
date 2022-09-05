@@ -135,7 +135,7 @@ function configureCanvasContext() {
     // set fill and stroke styles
     ctx.fillStyle = 'black';
     ctx.strokeStyle = 'black';
-    ctx.font = '26px monospace';
+    ctx.font = '22px monospace';
 
     //load checkboxes
     enableDateTime = document.getElementById("checkDateTime").checked;
