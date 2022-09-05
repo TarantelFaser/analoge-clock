@@ -36,6 +36,8 @@ function loadClock() {
 
 //update the clock
 function loop() {
+    window.onresize = function(){ location.reload(); }
+
     ctx.clearRect(0,0, canvas.width, canvas.height); //clear canvas for new drawing
     if (!minimalistic) drawStaticClockElements(); //draw everything that does not move
 
@@ -146,7 +148,13 @@ function configureCanvasContext() {
     //mid
     midX = canvas.width / 2;
     midY = canvas.height / 2;
-    clockRadius = 0.9 * midX;
+
+    //make sure clock fits screen
+    if (midX < midY) {
+        clockRadius = 0.9 * midX;
+    } else {
+        clockRadius = 0.9 * midY;
+    }
     hourPointerLength = 0.6 * clockRadius;
     minutePointerLength = 0.8 * clockRadius;
     secondPointerLength = 0.9 * clockRadius;
