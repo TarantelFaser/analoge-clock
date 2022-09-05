@@ -10,7 +10,7 @@
 
 .margin-percentile-90 {
     height: 90vw;
-    width: 90vw;
+    width: 50vw;
 }
 
 .input-div {
@@ -20,5 +20,4 @@
     color : dimgray;
     background-color: lightgrey;
     padding : 10px;
-
 }
