@@ -4,13 +4,14 @@
 }
 
 #canvas {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 
-.margin-percentile-90 {
-    height: 90vh;
+.div-resizer {
+    aspect-ratio: 1/1;
     width: 90vw;
+    height: 90vh;
 }
 
 .input-div {
