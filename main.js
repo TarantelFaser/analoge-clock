@@ -27,6 +27,12 @@ const hour = minute * 60;
 const day = hour * 24;
 const year = day * 365;
 
+//if window resizes clock might be stretched so re-load canvas size
+window.onresize = function(){
+    //location.reload();
+    loadClock();
+}
+
 //draw clock and animat it
 function loadClock() {
     configureCanvasContext();
@@ -36,7 +42,6 @@ function loadClock() {
 
 //update the clock
 function loop() {
-    window.onresize = function(){ location.reload(); }
 
     ctx.clearRect(0,0, canvas.width, canvas.height); //clear canvas for new drawing
     if (!minimalistic) drawStaticClockElements(); //draw everything that does not move
