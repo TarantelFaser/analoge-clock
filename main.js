@@ -143,6 +143,7 @@ function configureCanvasContext() {
     ctx.fillStyle = 'black';
     ctx.strokeStyle = 'black';
     ctx.font = '22px monospace';
+    ctx.textAlign = "center";
 
     //load checkboxes
     enableDateTime = document.getElementById("checkDateTime").checked;
@@ -176,8 +177,8 @@ function drawStaticClockElements() {
     for (let i = 1; i <= 12; i++) {
         ctx.fillText(
             i, //getX(-i*...) for clockwise drawing
-            getX(-i*Math.PI/6 + Math.PI/2, clockRadius + 30)-15, //+ 30 for spacing from the clock
-            getY(i*Math.PI/6 + Math.PI/2, clockRadius + 30)+15 // +-15 for better alignment of numbers (centering)
+            getX(-i*Math.PI/6 + Math.PI/2, clockRadius + 30), //+ 30 for spacing from the clock
+            getY(i*Math.PI/6 + Math.PI/2, clockRadius + 30)+7 // +-15 for better alignment of numbers (centering)
         );
     }
 
